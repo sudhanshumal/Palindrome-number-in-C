@@ -2,19 +2,19 @@
  
 int main()
 {
-    int n=111, a,b=0,num;
-    
-
-    num=n;
+    int n, last_digit,rev=0,num;
+    print("enter any number");
+    scanf("%d",&n);
+    temp=n;
     
     while(n!=0)
     {
-        a=n%10;
-        b=a+(b*10);
+        last_digit=n%10;
+        rev=last_digit+rev*10;
         n=n/10;
     }
     
-    if(num==b)
+    if(temp==n)
         printf("\nThe given number is palindrome");
     else
         printf("\nThe given number is not palindrome");
